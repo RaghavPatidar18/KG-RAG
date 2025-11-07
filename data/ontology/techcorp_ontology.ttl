@@ -1,0 +1,114 @@
+@prefix : <http://example.org/techcorp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology Declaration
+<http://example.org/techcorp> rdf:type owl:Ontology ;
+    rdfs:label "TechCorp Domain Ontology" ;
+    rdfs:comment "An ontology describing the TechCorp business domain" .
+
+# Classes
+:Organization rdf:type owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "A business organization or company" .
+
+:Person rdf:type owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "An individual person" .
+
+:Product rdf:type owl:Class ;
+    rdfs:label "Product" ;
+    rdfs:comment "A product or service offered by a company" .
+
+:Location rdf:type owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "A geographical location" .
+
+:Industry rdf:type owl:Class ;
+    rdfs:label "Industry" ;
+    rdfs:comment "A business industry or sector" .
+
+:Technology rdf:type owl:Class ;
+    rdfs:label "Technology" ;
+    rdfs:comment "A technology or technical capability" .
+
+:Partnership rdf:type owl:Class ;
+    rdfs:label "Partnership" ;
+    rdfs:comment "A business partnership or collaboration" .
+
+:ResearchArea rdf:type owl:Class ;
+    rdfs:label "Research Area" ;
+    rdfs:comment "An area of research or study" .
+
+# Object Properties
+:foundedBy rdf:type owl:ObjectProperty ;
+    rdfs:label "founded by" ;
+    rdfs:domain :Organization ;
+    rdfs:range :Person .
+
+:headquarteredIn rdf:type owl:ObjectProperty ;
+    rdfs:label "headquartered in" ;
+    rdfs:domain :Organization ;
+    rdfs:range :Location .
+
+:servesIndustry rdf:type owl:ObjectProperty ;
+    rdfs:label "serves industry" ;
+    rdfs:domain :Organization ;
+    rdfs:range :Industry .
+
+:develops rdf:type owl:ObjectProperty ;
+    rdfs:label "develops" ;
+    rdfs:domain :Organization ;
+    rdfs:range :Product .
+
+:leadsResearch rdf:type owl:ObjectProperty ;
+    rdfs:label "leads research" ;
+    rdfs:domain :Person ;
+    rdfs:range :ResearchArea .
+
+:partnersWith rdf:type owl:ObjectProperty ;
+    rdfs:label "partners with" ;
+    rdfs:domain :Organization ;
+    rdfs:range :Organization .
+
+:usesProduct rdf:type owl:ObjectProperty ;
+    rdfs:label "uses product" ;
+    rdfs:domain :Organization ;
+    rdfs:range :Product .
+
+:specializesIn rdf:type owl:ObjectProperty ;
+    rdfs:label "specializes in" ;
+    rdfs:domain :Organization ;
+    rdfs:range :Technology .
+
+# Data Properties
+:hasRevenue rdf:type owl:DatatypeProperty ;
+    rdfs:label "has revenue" ;
+    rdfs:domain :Organization ;
+    rdfs:range xsd:decimal .
+
+:hasEmployeeCount rdf:type owl:DatatypeProperty ;
+    rdfs:label "has employee count" ;
+    rdfs:domain :Organization ;
+    rdfs:range xsd:integer .
+
+:foundedYear rdf:type owl:DatatypeProperty ;
+    rdfs:label "founded year" ;
+    rdfs:domain :Organization ;
+    rdfs:range xsd:gYear .
+
+:launchedYear rdf:type owl:DatatypeProperty ;
+    rdfs:label "launched year" ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:gYear .
+
+:hasRole rdf:type owl:DatatypeProperty ;
+    rdfs:label "has role" ;
+    rdfs:domain :Person ;
+    rdfs:range xsd:string .
+
+:hasName rdf:type owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:range xsd:string .

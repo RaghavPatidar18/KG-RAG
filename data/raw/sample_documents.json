@@ -1,0 +1,32 @@
+[
+  {
+    "id": "doc_1",
+    "title": "TechCorp Company Overview",
+    "content": "TechCorp is a leading technology company founded in 2010 by CEO Sarah Johnson and CTO Michael Chen. The company is headquartered in San Francisco, California and specializes in artificial intelligence and cloud computing solutions. TechCorp has over 5000 employees worldwide and serves clients in healthcare, finance, and retail industries. The company's mission is to democratize AI technology and make it accessible to businesses of all sizes."
+  },
+  {
+    "id": "doc_2", 
+    "title": "TechCorp AI Platform",
+    "content": "The TechCorp AI Platform is the company's flagship product, launched in 2018. This comprehensive platform includes machine learning tools, natural language processing capabilities, and computer vision modules. The platform is used by over 1000 enterprise customers including MedHealth Corp, FinanceFirst Bank, and RetailMax Inc. The AI Platform generates 60% of TechCorp's total revenue and has won multiple industry awards including the 2023 AI Innovation Award."
+  },
+  {
+    "id": "doc_3",
+    "title": "TechCorp Cloud Services", 
+    "content": "TechCorp Cloud Services provides scalable infrastructure solutions for businesses. The service includes data storage, compute resources, and managed databases. It was launched in 2020 and now serves over 2500 customers. The cloud service is built on a multi-region architecture with data centers in North America, Europe, and Asia. Key features include 99.9% uptime guarantee, automatic scaling, and enterprise-grade security."
+  },
+  {
+    "id": "doc_4",
+    "title": "TechCorp Research Division",
+    "content": "The TechCorp Research Division, led by Dr. Emily Rodriguez, focuses on cutting-edge AI research. The division has 200 researchers and has published over 150 papers in top-tier conferences. Current research areas include quantum machine learning, federated learning, and explainable AI. The division collaborates with Stanford University, MIT, and Carnegie Mellon University. Recent breakthroughs include a new neural architecture that reduces training time by 40%."
+  },
+  {
+    "id": "doc_5",
+    "title": "TechCorp Partnerships",
+    "content": "TechCorp has strategic partnerships with major technology companies. The company partnered with CloudGiant Inc in 2022 to integrate their services. TechCorp also has a research partnership with DataFlow Systems for developing next-generation analytics tools. In 2023, TechCorp acquired StartupAI, a promising machine learning startup, for $50 million. These partnerships help TechCorp expand its market reach and enhance its technology offerings."
+  },
+  {
+    "id": "doc_6",
+    "title": "TechCorp Financial Performance",
+    "content": "TechCorp reported strong financial results for 2023. The company achieved $500 million in annual revenue, representing 25% growth from the previous year. The AI Platform contributed $300 million, while Cloud Services generated $150 million. The company has $100 million in cash reserves and plans to invest $50 million in R&D for 2024. TechCorp went public in 2021 and is traded on NASDAQ under the symbol TECH."
+  }
+]
